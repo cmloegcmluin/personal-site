@@ -1,0 +1,80 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3604151, 2018-07-02T17:35:06-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: LeipzigerAnt-Dem by profonts
+ * URL: https://www.myfonts.com/fonts/profonts/leipziger-antiqua/demi/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * 
+ * Webfont: LeipzigerAnt-Reg by profonts
+ * URL: https://www.myfonts.com/fonts/profonts/leipziger-antiqua/regular/
+ * Copyright: Copyright 2006 ProFonts P. Rosenfeld &amp; J. Willrodt
+ * 
+ * Webfont: LeipzigerAnt-Ita by profonts
+ * URL: https://www.myfonts.com/fonts/profonts/leipziger-antiqua/italic/
+ * Copyright: Copyright 2006 ProFonts P. Rosenfeld &amp; J. Willrodt
+ * 
+ * Webfont: LeipzigerAntCapReg by profonts
+ * URL: https://www.myfonts.com/fonts/profonts/leipziger-antiqua/cap-reg/
+ * Copyright: Copyright 2006 ProFonts P. Rosenfeld &amp; J. Willrodt
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3604151
+ * Licensed pageviews: 20,000
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+@import url("//hello.myfonts.net/count/36feb7");
+
+@font-face {
+    font-family: 'LeipzigerAnt-Dem';
+    src: url('../fonts/36FEB7_0_0.eot');
+    src: url('../fonts/36FEB7_0_0.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/36FEB7_0_0.woff2') format('woff2'),
+        url('../fonts/36FEB7_0_0.woff') format('woff'),
+        url('../fonts/36FEB7_0_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LeipzigerAnt-Reg';
+    src: url('../fonts/36FEB7_1_0.eot');
+    src: url('../fonts/36FEB7_1_0.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/36FEB7_1_0.woff2') format('woff2'),
+        url('../fonts/36FEB7_1_0.woff') format('woff'),
+        url('../fonts/36FEB7_1_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LeipzigerAnt-Ita';
+    src: url('../fonts/36FEB7_2_0.eot');
+    src: url('../fonts/36FEB7_2_0.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/36FEB7_2_0.woff2') format('woff2'),
+        url('../fonts/36FEB7_2_0.woff') format('woff'),
+        url('../fonts/36FEB7_2_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LeipzigerAntCapReg';
+    src: url('../fonts/36FEB7_3_0.eot');
+    src: url('../fonts/36FEB7_3_0.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/36FEB7_3_0.woff2') format('woff2'),
+        url('../fonts/36FEB7_3_0.woff') format('woff'),
+        url('../fonts/36FEB7_3_0.ttf') format('truetype');
+}
+
+.leipziger-antiqua-bold {
+    font-family: LeipzigerAnt-Dem, serif;
+}
+.leipziger-antiqua-regular {
+    font-family: LeipzigerAnt-Reg, serif;
+}
+.leipziger-antiqua-small-caps {
+    font-family: LeipzigerAntCapReg, serif;
+}
+.leipziger-antiqua-italics {
+    font-family: LeipzigerAnt-Ita, serif;
+}
