@@ -1,8 +1,7 @@
 {
   "name": "personal-site",
   "scripts": {
-    "start": "node server.js",
-    "start-local": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "deploy": "sh ./bin/deploy.sh"
   },
   "repository": {
