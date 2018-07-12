@@ -68,13 +68,55 @@
 
 .leipziger-antiqua-bold {
     font-family: LeipzigerAnt-Dem, serif;
+    font-weight: normal;
 }
 .leipziger-antiqua-regular {
     font-family: LeipzigerAnt-Reg, serif;
+    font-size: 12px;
 }
 .leipziger-antiqua-small-caps {
     font-family: LeipzigerAntCapReg, serif;
 }
 .leipziger-antiqua-italics {
     font-family: LeipzigerAnt-Ita, serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+    grid-template-rows: 100px 150px 150px 150px 50px auto;
+}
+
+.title-column {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.main-column {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.supplement-column {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.main-1 {
+    @extend .main-column;
+    grid-row-start: 1;
+}
+
+.main-2 {
+    @extend .main-column;
+    grid-row-start: 2;
+}
+
+.main-3 {
+  @extend .main-column;
+  grid-row-start: 3;
+}
+
+* {
+    @extend .leipziger-antiqua-regular;
 }
