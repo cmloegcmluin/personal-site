@@ -92,6 +92,18 @@
     grid-column-end: 1;
 }
 
+.title {
+    @extend .title-column;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.canvas {
+    @extend .title-column;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
 .main-column {
     grid-column-start: 2;
     grid-column-end: 2;
