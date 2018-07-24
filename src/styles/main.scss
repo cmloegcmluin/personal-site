@@ -1,0 +1,16 @@
+@import './fonts.scss';
+@import './layout.scss';
+
+#title {
+  @extend .leipziger-antiqua-regular;
+  position: absolute;
+  width: 400px;
+  margin-left: 20px;
+  top: 0;
+  color: white;
+  font-size: 72px;
+}
+
+canvas {
+  display: block;
+}
