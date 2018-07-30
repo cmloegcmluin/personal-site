@@ -1,0 +1,203 @@
+body {
+  background-color: $background-grey;
+  color: $background-grey;
+
+  a {
+    color: $background-grey;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+
+  g {
+    fill: $background-grey;
+    transition: fill 0.3s;
+  }
+
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.name-row {
+  flex: 6;
+
+  .name {
+    flex: 1;
+    @include unselectable_section_colors($red-for-me);
+
+    .name-text {
+      @include scalable_w_limits(9);
+    }
+  }
+}
+
+.info-row {
+  flex: 9;
+
+  .info {
+    flex: 5;
+    @include dimmable_color($red-for-me);
+
+    @include centered_column;
+    @include with_border;
+
+    .info-text {
+      @include scalable_w_limits(5);
+      @include hover_color;
+    }
+  }
+
+  .photo {
+    flex: 4;
+    @include unselectable_section_colors($red-for-me);
+
+    img {
+      margin: auto;
+    }
+  }
+}
+
+.code-links-row {
+  flex: 6;
+
+  .cv, .li, .gh, .rb, .dt, .ht {
+    flex: 1;
+  }
+
+  .cv, .li {
+    @include dimmable_color(mix($red-for-me, $orange-for-code));
+  }
+
+  .gh, .rb, .dt, .ht {
+    @include dimmable_color($orange-for-code);
+  }
+
+  .dt {
+    @include hover_color_drempt;
+  }
+
+  .dt-wrapper {
+    margin: auto;
+    @include scalable_width(10);
+
+    .dt-text {
+      float: right;
+      background-color: $background-grey;
+      transition: background-color 0.3s;
+      @include scalable_drempt_extras(10);
+    }
+  }
+}
+
+.code-row {
+  flex: 8;
+
+  .code {
+    flex: 1;
+    @include unselectable_section_colors($orange-for-code);
+  }
+}
+
+.music-links-row {
+  flex: 7;
+
+  .demos {
+    flex: 2;
+    align-items: center;
+    @include dimmable_color(
+                    mix(
+                                    mix($blue-for-music, $green-for-vr),
+                                    $orange-for-code,
+                                    $inv-phi-percent
+                    )
+    );
+
+    canvas {
+      @include scalable_w_limits(20);
+      @include scalable_width(20);
+      cursor: pointer;
+    }
+  }
+
+  .gr, .sc {
+    flex: 1;
+  }
+
+  .gr {
+    @include dimmable_color(
+                    mix($orange-for-code, $blue-for-music, $inv-phi-percent)
+    );
+  }
+
+  .sc {
+    @include dimmable_color(
+                    mix($blue-for-music, $orange-for-code, $inv-phi-percent)
+    );
+  }
+}
+
+.vr-music-row {
+  flex: 7;
+
+  .vr {
+    flex: 1;
+    @include unselectable_section_colors($green-for-vr);
+  }
+
+  .music {
+    flex: 2;
+    @include unselectable_section_colors($blue-for-music);
+  }
+}
+
+.misc-row {
+  flex: 7;
+
+  .film, .vm, .blog, .word, .uncannly {
+    flex: 1;
+  }
+
+  .fmi {
+    flex: 2;
+  }
+
+  .film {
+    @include unselectable_section_colors($pink-for-film);
+
+    .film-text {
+      transform: rotate(270deg);
+    }
+  }
+
+  .vm {
+    @include dimmable_color(
+                    mix($green-for-vr, $pink-for-film)
+    );
+  }
+
+  .blog {
+    @include dimmable_color(
+                    mix(
+                                    mix($green-for-vr, $blue-for-music),
+                                    mix($yellow-for-word, $pink-for-film)
+                    )
+    );
+  }
+
+  .uncannly {
+    @include dimmable_color($yellow-for-word);
+  }
+
+  .word {
+    @include unselectable_section_colors($yellow-for-word);
+
+    .word-text {
+      transform: rotate(270deg);
+    }
+  }
+
+  .fmi {
+    @include dimmable_color(
+                    mix($blue-for-music, $yellow-for-word)
+    );
+  }
+}
