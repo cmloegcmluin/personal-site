@@ -1,4 +1,8 @@
 ---
 applications:
 - memory: 64m
+  name: douglas-blumeyer
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  routes:
+  - route: douglas-blumeyer.cfapps.io
+  - route: www.douglasblumeyer.com
