@@ -102,7 +102,7 @@ export default () => (
             </div>
 
             <div className="gr row-section code-category music-category">
-                <a href="http://geometrhythm.com" target="_blank">
+                <a href="https://www.geometrhythm.com" target="_blank">
                     <GeometrhythmIcon width="67%"/>
                 </a>
             </div>
@@ -144,7 +144,7 @@ export default () => (
             </div>
 
             <div className="blog row-section word-category film-category vr-category">
-                <a href="http://blog.douglasblumeyer.com" target="_blank">
+                <a href="https://blog.douglasblumeyer.com" target="_blank">
                     <FourEyesIcon width="67%"/>
                 </a>
             </div>
