@@ -5,8 +5,8 @@ import RainbowbblesIcon from '../assets/rainbowbbles.svg'
 import HoundstoothIcon from '../assets/houndstooth.svg'
 import GeometrhythmIcon from '../assets/geometrhythm.svg'
 import FourEyesIcon from '../assets/four_eyes.svg'
-import FunMusicalIdeasIcon from '../assets/fmi.svg'
 import UncannlyIcon from '../assets/uncannly.svg'
+import MusicalPatternsIcon from '../assets/musical_patterns.svg'
 
 import { faGithubSquare, faLinkedin, faSoundcloud, faVimeoSquare } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
@@ -64,13 +64,13 @@ export default () => (
             </div>
 
             <div className="rb row-section code-category">
-                <a href="https://rainbowbbles.douglasblumeyer.com" target="_blank">
+                <a href="https://rainbowbbles.douglasblumeyer.com" target="_blank" title="Rainbowbbles">
                     <RainbowbblesIcon width="67%"/>
                 </a>
             </div>
 
             <div className="dt row-section code-category">
-                <a href="https://drem.pt" target="_blank">
+                <a href="https://drem.pt" target="_blank" title="Drempt">
                     <div className="dt-wrapper">
                         <div className="dt-text"/>
                     </div>
@@ -78,7 +78,7 @@ export default () => (
             </div>
 
             <div className="ht row-section code-category">
-                <a href="https://houndstoothcraft.douglasblumeyer.com" target="_blank">
+                <a href="https://houndstoothcraft.douglasblumeyer.com" target="_blank" title="Houndstoothcraft">
                     <HoundstoothIcon width="100%" height="100%"/>
                 </a>
             </div>
@@ -96,13 +96,13 @@ export default () => (
 
         <div className="a-row music-links-row">
             <div className="demos row-section code-category music-category vr-category">
-                <a href="https://houndstoothtopia.douglasblumeyer.com" target="_blank">
+                <a href="https://houndstoothtopia.douglasblumeyer.com" target="_blank" title="Houndstoothtopia">
                     <canvas id="dougstoothCanvas"/>
                 </a>
             </div>
 
             <div className="gr row-section code-category music-category">
-                <a href="https://www.geometrhythm.com" target="_blank">
+                <a href="https://www.geometrhythm.com" target="_blank" title="Geometrhythm">
                     <GeometrhythmIcon width="67%"/>
                 </a>
             </div>
@@ -144,13 +144,13 @@ export default () => (
             </div>
 
             <div className="blog row-section word-category film-category vr-category">
-                <a href="https://blog.douglasblumeyer.com" target="_blank">
+                <a href="https://blog.douglasblumeyer.com" target="_blank" title="Cmloegcmluin">
                     <FourEyesIcon width="67%"/>
                 </a>
             </div>
 
             <div className="uncannly row-section word-category">
-                <a href="https://uncannly.douglasblumeyer.com" target="_blank">
+                <a href="https://uncannly.douglasblumeyer.com" target="_blank" title="Uncannly">
                     <UncannlyIcon width="100%"/>
                 </a>
             </div>
@@ -161,10 +161,9 @@ export default () => (
                 </div>
             </div>
 
-            <div className="fmi row-section music-category word-category">
-                <a href="https://www.dropbox.com/s/kqd5emgc41b1ap4/Fun%20Musical%20Ideas%20-%20v1.0%20-%20July%202014.pdf?dl=0"
-                   target="_blank">
-                    <FunMusicalIdeasIcon width="89%" height="89%"/>
+            <div className="mp row-section music-category word-category">
+                <a href="https://musical-patterns.douglasblumeyer.com" target="_blank" title="Musical Patterns">
+                    <MusicalPatternsIcon width="89%" height="89%"/>
                 </a>
             </div>
         </div>

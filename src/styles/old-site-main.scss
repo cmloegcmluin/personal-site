@@ -156,7 +156,7 @@ body {
     flex: 1;
   }
 
-  .fmi {
+  .mp {
     flex: 2;
   }
 
@@ -195,7 +195,7 @@ body {
     }
   }
 
-  .fmi {
+  .mp {
     @include dimmable_color(
                     mix($blue-for-music, $yellow-for-word)
     );
