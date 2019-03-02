@@ -6,3 +6,6 @@ deploy:
 
 start:
 	npm start
+
+build:
+	webpack
