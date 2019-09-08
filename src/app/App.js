@@ -39,7 +39,7 @@ export default () => (
             </div>
 
             <div className="photo row-section me me-category">
-                <img src={goodOneSmall} width="89%"/>
+                <img src={goodOneSmall} width="89%" height="89%"/>
             </div>
         </div>
 
@@ -47,25 +47,25 @@ export default () => (
         <div className="a-row code-links-row">
             <div className="cv row-section code-category me-category">
                 <a target="_blank" href="../assets/Douglas_Blumeyer_2017_resume.pdf">
-                    <FontAwesomeIcon icon={faFile} style={{width: '67%', height: '67%'}}/>
+                    <FontAwesomeIcon icon={faFile} style={{width: '80%', height: '80%'}}/>
                 </a>
             </div>
 
             <div className="li row-section code-category me-category">
                 <a href="https://linkedin.com/in/douglasblumeyer" target="_blank">
-                    <FontAwesomeIcon icon={faLinkedin} style={{width: '67%', height: '67%'}}/>
+                    <FontAwesomeIcon icon={faLinkedin} style={{width: '90%', height: '90%'}}/>
                 </a>
             </div>
 
             <div className="gh row-section code-category">
                 <a href="https://github.com/cmloegcmluin" target="_blank">
-                    <FontAwesomeIcon icon={faGithubSquare} style={{width: '67%', height: '67%'}}/>
+                    <FontAwesomeIcon icon={faGithubSquare} style={{width: '90%', height: '90%'}}/>
                 </a>
             </div>
 
             <div className="rb row-section code-category">
                 <a href="https://rainbowbbles.douglasblumeyer.com" target="_blank" title="Rainbowbbles">
-                    <RainbowbblesIcon width="67%"/>
+                    <RainbowbblesIcon width="88%" height="88%"/>
                 </a>
             </div>
 
@@ -103,7 +103,7 @@ export default () => (
 
             <div className="gr row-section code-category music-category">
                 <a href="https://www.geometrhythm.com" target="_blank" title="Geometrhythm">
-                    <GeometrhythmIcon width="67%"/>
+                    <GeometrhythmIcon width="90%" height="90%" />
                 </a>
             </div>
 
@@ -139,19 +139,19 @@ export default () => (
 
             <div className="vm row-section film film-category vr-category">
                 <a href="https://vimeo.com/douglasblumeyer" target="_blank">
-                    <FontAwesomeIcon icon={faVimeoSquare} style={{width: '67%', height: '67%'}}/>
+                    <FontAwesomeIcon icon={faVimeoSquare} style={{width: '90%', height: '90%'}}/>
                 </a>
             </div>
 
             <div className="blog row-section word-category film-category vr-category">
                 <a href="https://blog.douglasblumeyer.com" target="_blank" title="Cmloegcmluin">
-                    <FourEyesIcon width="67%"/>
+                    <FourEyesIcon width="90%" height="90%"/>
                 </a>
             </div>
 
             <div className="uncannly row-section word-category">
                 <a href="https://uncannly.douglasblumeyer.com" target="_blank" title="Uncannly">
-                    <UncannlyIcon width="100%"/>
+                    <UncannlyIcon width="100%" height="100%"/>
                 </a>
             </div>
 
