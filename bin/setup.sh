@@ -8,3 +8,4 @@ fi
 gcloud config configurations activate douglas-blumeyer
 gcloud config set project douglas-blumeyer
 gcloud config set account kingwoodchuckii@gmail.com
+gcloud auth login kingwoodchuckii@gmail.com

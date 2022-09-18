@@ -7,13 +7,14 @@ import GeometrhythmIcon from '../assets/geometrhythm.svg'
 import FourEyesIcon from '../assets/four_eyes.svg'
 import UncannlyIcon from '../assets/uncannly.svg'
 import MusicalPatternsIcon from '../assets/musical_patterns.svg'
+import resume from '../assets/Douglas_Blumeyer_2022_resume.pdf'
 
 import { faGithubSquare, faLinkedin, faSoundcloud, faVimeoSquare } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default () => (
-    <div className="the-container">
+export default ({ callback }) => (
+    <div className="the-container" ref={callback}>
 
 
         <div className="a-row name-row">
@@ -34,19 +35,19 @@ export default () => (
                     San Francisco
                 </div>
                 <div className="info-text me-category">
-                    <a href="tel:847-922-1483">+1.415.254.1073</a>
+                    <a href="tel:415-254-1073">+1.415.254.1073</a>
                 </div>
             </div>
 
             <div className="photo row-section me me-category">
-                <img src={goodOneSmall} width="89%" height="89%"/>
+                <img src={goodOneSmall} width="89%"/>
             </div>
         </div>
 
 
         <div className="a-row code-links-row">
             <div className="cv row-section code-category me-category">
-                <a target="_blank" href="../assets/Douglas_Blumeyer_2017_resume.pdf">
+                <a target="_blank" href={resume}>
                     <FontAwesomeIcon icon={faFile} style={{width: '80%', height: '80%'}}/>
                 </a>
             </div>
@@ -95,14 +96,12 @@ export default () => (
 
 
         <div className="a-row music-links-row">
-            <div className="demos row-section code-category music-category vr-category">
-                <a href="https://houndstoothtopia.douglasblumeyer.com" target="_blank" title="Houndstoothtopia">
-                    <canvas id="dougstoothCanvas"/>
-                </a>
+            <div className="demos row-section code-category music-category vr-category" title="Houndstoothtopia">
+                <canvas id="dougstoothCanvas"/>
             </div>
 
             <div className="gr row-section code-category music-category">
-                <a href="https://www.geometrhythm.com" target="_blank" title="Geometrhythm">
+                <a href="https://github.com/geometrhythm" target="_blank" title="Geometrhythm">
                     <GeometrhythmIcon width="90%" height="90%" />
                 </a>
             </div>
@@ -150,7 +149,7 @@ export default () => (
             </div>
 
             <div className="uncannly row-section word-category">
-                <a href="https://uncannly.douglasblumeyer.com" target="_blank" title="Uncannly">
+                <a href="https://github.com/Uncannly" target="_blank" title="Uncannly">
                     <UncannlyIcon width="100%" height="100%"/>
                 </a>
             </div>

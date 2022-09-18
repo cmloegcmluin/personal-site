@@ -4,12 +4,13 @@ import {
     WebGLRenderer,
     SpotLight,
     DirectionalLight,
-    OBJLoader,
     Mesh,
     MeshLambertMaterial,
-    OrbitControls,
     LoadingManager,
-} from 'three-full'
+} from 'three'
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+import dougstoothObj from '../assets/ht3d_001_dougstooth.obj'
 
 const scene = new Scene()
 const camera = new PerspectiveCamera(75, 1, 1, 10000)
@@ -23,9 +24,20 @@ const w = window,
 const canvasDimensions = Math.min(x, y)
 
 const dougstoothCanvas = document.querySelector('#dougstoothCanvas')
-
 dougstoothCanvas.width = canvasDimensions
 dougstoothCanvas.height = canvasDimensions
+
+let drag = false;
+dougstoothCanvas.addEventListener('mousedown', () => drag = false)
+dougstoothCanvas.addEventListener('mousemove', () => drag = true)
+dougstoothCanvas.addEventListener('mouseup', () => {
+    if (!drag) {
+        window.open(
+            "https://houndstoothtopia.douglasblumeyer.com",
+            "_blank",
+        )
+    } 
+})
 
 const renderer = new WebGLRenderer({canvas: dougstoothCanvas, alpha: true})
 
@@ -73,20 +85,14 @@ controls.damping = 0.2
 const manager = new LoadingManager()
 
 const loader = new OBJLoader(manager)
-const obj_path = require('../assets/ht3d_001_dougstooth.obj')
-loader.load(obj_path, function (object) {
-
+loader.load(dougstoothObj, function (object) {
     object.traverse(function (child) {
-
         if (child instanceof Mesh) {
-
             child.material = new MeshLambertMaterial({color: 0xdddddd})
             child.castShadow = true
             child.receiveShadow = true
             child.scale.set(0.5, 0.5, 0.5)
-
         }
-
     })
 
     window.bob = object
