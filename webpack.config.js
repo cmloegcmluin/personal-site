@@ -4,13 +4,16 @@ const webpack = require("webpack")
 module.exports = {
     entry: './src/app/index.js',
     mode: 'none',
+    output: {
+        assetModuleFilename: '[file]'
+    },
     module: {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
-                options: {presets: ["@babel/preset-react"]},
+                options: {presets: ['@babel/preset-react']},
             },
             {
                 test: /\.svg$/,
@@ -18,7 +21,7 @@ module.exports = {
             },
             {
                 test: /\.(eot|woff|woff2|ttf|png|pdf|jpg|obj)/,
-                loader: 'file-loader',
+                type: 'asset/resource',
             },
             {
                 test: /\.scss$/,

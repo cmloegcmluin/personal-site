@@ -101,7 +101,7 @@ body {
   flex: 7;
 
   .demos {
-    flex: 2;
+    flex: 4;
     align-items: center;
     @include dimmable_color(
                     mix(
@@ -118,8 +118,8 @@ body {
     }
   }
 
-  .gr, .sc {
-    flex: 1;
+  .gr, .sc, {
+    flex: 2;
   }
 
   .gr {
@@ -129,6 +129,13 @@ body {
   }
 
   .sc {
+    @include dimmable_color(
+                    mix($blue-for-music, $orange-for-code, $inv-phi-percent)
+    );
+  }
+
+  .sag {
+    flex: 1;
     @include dimmable_color(
                     mix($blue-for-music, $orange-for-code, $inv-phi-percent)
     );
@@ -150,13 +157,9 @@ body {
 }
 
 .misc-row {
-  flex: 7;
+  flex: 10;
 
-  .film, .vm, .blog, .word, .uncannly {
-    flex: 1;
-  }
-
-  .mp {
+  .film, .vm, .blog, .word, .uncannly, .mp, .xw {
     flex: 2;
   }
 
@@ -195,7 +198,7 @@ body {
     }
   }
 
-  .mp {
+  .mp, .xw {
     @include dimmable_color(
                     mix($blue-for-music, $yellow-for-word)
     );

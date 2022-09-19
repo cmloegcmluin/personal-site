@@ -1,12 +1,14 @@
 import React from 'react'
 
-import goodOneSmall from '../assets/good_one_small.jpg'
+import profilePic from '../assets/Douglas_Blumeyer_profile_pic.jpg'
 import RainbowbblesIcon from '../assets/rainbowbbles.svg'
 import HoundstoothIcon from '../assets/houndstooth.svg'
 import GeometrhythmIcon from '../assets/geometrhythm.svg'
 import FourEyesIcon from '../assets/four_eyes.svg'
 import UncannlyIcon from '../assets/uncannly.svg'
 import MusicalPatternsIcon from '../assets/musical_patterns.svg'
+import XenWikiLogoIcon from '../assets/xen_wiki_logo.svg'
+import SagittalIcon from '../assets/sagittal.svg'
 import resume from '../assets/Douglas_Blumeyer_2022_resume.pdf'
 
 import { faGithubSquare, faLinkedin, faSoundcloud, faVimeoSquare } from '@fortawesome/free-brands-svg-icons'
@@ -32,7 +34,7 @@ export default ({ callback }) => (
                     <a href="mailto:douglas.blumeyer@gmail.com">@gmail.com</a>
                 </div>
                 <div className="info-text">
-                    San Francisco
+                    SF Bay Area
                 </div>
                 <div className="info-text me-category">
                     <a href="tel:415-254-1073">+1.415.254.1073</a>
@@ -40,7 +42,7 @@ export default ({ callback }) => (
             </div>
 
             <div className="photo row-section me me-category">
-                <img src={goodOneSmall} width="89%"/>
+                <img src={profilePic} width="80%"/>
             </div>
         </div>
 
@@ -111,6 +113,12 @@ export default ({ callback }) => (
                     <FontAwesomeIcon icon={faSoundcloud} style={{width: '87%', height: '87%'}}/>
                 </a>
             </div>
+            
+            <div className="sag row-section code-category music-category">
+                <a href="https://sagittal.org" target="_blank" title="Sagittal microtonal notation">
+                    <SagittalIcon width="89%" height="89%"/>
+                </a>
+            </div>
         </div>
 
 
@@ -163,6 +171,12 @@ export default ({ callback }) => (
             <div className="mp row-section music-category word-category">
                 <a href="https://musical-patterns.douglasblumeyer.com" target="_blank" title="Musical Patterns">
                     <MusicalPatternsIcon width="89%" height="89%"/>
+                </a>
+            </div>
+
+            <div className="xw row-section music-category word-category">
+                <a href="https://en.xen.wiki/w/User:Cmloegcmluin" target="_blank" title="Xen Wiki profile">
+                    <XenWikiLogoIcon width="89%" height="89%"/>
                 </a>
             </div>
         </div>
