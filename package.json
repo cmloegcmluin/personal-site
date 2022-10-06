@@ -1,8 +1,7 @@
 {
   "name": "personal-site",
   "scripts": {
-    "start": "webpack-dev-server",
-    "deploy": "sh ./bin/deploy.sh"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
